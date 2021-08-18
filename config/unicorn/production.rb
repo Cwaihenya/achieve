@@ -13,6 +13,7 @@ stdout_path $std_log
 timeout $timeout
 listen  $listen
 pid $pid
+
 preload_app true
 before_fork do |server, worker|
   defined?(ActiveRecord::Base) and ActiveRecord::Base.connection.disconnect!

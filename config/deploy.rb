@@ -6,7 +6,7 @@ set :application, 'achieve'
 # (Xxxxxxxx: user name, yyyyyyyy: application name)
 set :repo_url, 'https://github.com/Cwaihenya/achieve'
 # deployするブランチ。デフォルトでmainを使用している場合、masterをmainに変更してください。
-set :branch, ENV['BRANCH'] || 'master'
+set :branch, ENV['BRANCH'] || 'main'
 # The directory to deploy to.
 set :deploy_to, '/var/www/achieve'
 # Folders/files with symbolic links
